@@ -1,0 +1,52 @@
+// Variables
+
+// Colors
+$introBlue: hsl(217, 28%, 15%); // (intro and email sign up background)
+$mainBlue: hsl(218, 28%, 13%); // (main background)
+$footerBlue: hsl(216, 53%, 9%); // (footer background)
+$testiBlue: hsl(219, 30%, 18%); // (testimonials background)
+$cyan: hsl(176, 68%, 64%); // (inside call-to-action gradient)
+$blue: hsl(198, 60%, 50%); // (inside call-to-action gradient)
+$white: hsl(0, 0%, 100%);
+//Fonts
+
+$font-title: "Raleway", sans-serif;
+$font-body: "Open Sans", sans-serif;
+
+html {
+  font-size: 14px;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  color: $white;
+  background-color: $mainBlue;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Helper Classes
+
+.container{
+    padding-right: 50px; 
+    padding-left: 50px;
+}
+
+button, .btn{
+    border: 0;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,$cyan,$blue);
+    font-family: $font-title;
+    padding: 20px 90px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+    
+}
