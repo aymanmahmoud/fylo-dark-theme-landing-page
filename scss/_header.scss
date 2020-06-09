@@ -1,8 +1,10 @@
 .header {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem;
+  background-color: $introBlue;
   &-logo {
     width: 11rem;
     &-img {
@@ -27,6 +29,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: $introBlue;
+  background-image: url('../images/bg-curvy-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 
   &-img {
     width: 100%;
@@ -278,6 +285,10 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 
     &-img {
       width: 100%;
@@ -294,6 +305,9 @@ footer{
 
     &-text {
       font-size: 14px;
+    }
+    button{
+      padding: 20px 80px;
     }
   }
   .features {

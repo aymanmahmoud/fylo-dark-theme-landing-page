@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -46,6 +47,7 @@ button, .btn {
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem;
+  background-color: #1c2431;
 }
 
 .header-logo {
@@ -78,6 +80,11 @@ button, .btn {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: #1c2431;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
 
 .intro-img {
@@ -384,6 +391,10 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    background-image: url("../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
   }
   .intro-img {
     width: 100%;
@@ -398,6 +409,9 @@ footer {
   }
   .intro-text {
     font-size: 14px;
+  }
+  .intro button {
+    padding: 20px 80px;
   }
   .features {
     -webkit-box-orient: vertical;
