@@ -171,7 +171,7 @@ button, .btn {
   color: #65e2d9;
 }
 
-@media (max-width: 768px) and (min-width: 375px) {
+@media (max-width: 768px) and (min-width: 300px) {
   .header {
     padding: 2rem;
   }
