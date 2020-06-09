@@ -135,11 +135,93 @@
       div {
         display: inline-block;
         vertical-align: middle;
-        h4 ,h6{
+        h4,
+        h6 {
           font-family: $font-title;
           margin: 5px;
         }
-        
+      }
+    }
+  }
+}
+
+.contact {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-around;
+  &-item {
+    background-color: $introBlue;
+    width: 70%;
+    padding:30px 20px;
+    text-align: center;
+    border-radius: 5px;
+    h1 {
+      font-size: 36px;
+      font-family: $font-title;
+    }
+    p {
+      font-family: $font-body;
+      font-size: 16px;
+      max-width: 90%;
+      margin: auto;
+    }
+    .email {
+    
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      
+      input {
+        width: 60%;
+        border: none;
+        border-radius: 50px;
+        padding-left: 30px;
+        font-size: 18px;
+        font-family: $font-body;
+      }
+      button {
+        width: 30%;
+        padding: 20px 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 200px;
+  position: relative;
+  top: -140px;
+  z-index: -1;
+  background-color: $footerBlue;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  >:first-child{
+    width: 100%;
+    img{
+      margin-top: 20px;
+    };
+  }
+
+  &-menu {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-top: 15px;
+        color: white;
+        font-family: $font-title;
+        list-style: none;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        p{
+          max-width: 300px;
+        }
       }
     }
   }
@@ -232,11 +314,42 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-  
+
     &-item {
       margin-top: 30px;
       width: 100%;
     }
   }
 
+  .contact {
+    justify-content: space-around;
+    &-item {
+      width: 90%;
+      padding: 20px;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        max-width: 90%;
+        margin: auto;
+      }
+      .email {
+        flex-direction: column;
+        margin-top: 30px;
+        input {
+          width: 90%;
+          margin: auto;
+          padding: 15px;
+          margin-bottom: 30px;
+          font-size: 14px;
+        }
+        button {
+          margin: auto;
+          width: 90%;
+          padding: 20px 0px;
+        }
+      }
+    }
+  }
 }

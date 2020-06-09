@@ -210,9 +210,112 @@ button, .btn {
   vertical-align: middle;
 }
 
-.testimonial-item-profile div h4, .testimonial-item-profile div h6 {
+.testimonial-item-profile div h4,
+.testimonial-item-profile div h6 {
   font-family: "Raleway", sans-serif;
   margin: 5px;
+}
+
+.contact {
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-item {
+  background-color: #1c2431;
+  width: 70%;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.contact-item h1 {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.contact-item .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.contact-item .email input {
+  width: 60%;
+  border: none;
+  border-radius: 50px;
+  padding-left: 30px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-item .email button {
+  width: 30%;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 200px;
+  position: relative;
+  top: -140px;
+  z-index: -1;
+  background-color: #0b1523;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer > :first-child {
+  width: 100%;
+}
+
+.footer > :first-child img {
+  margin-top: 20px;
+}
+
+.footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-menu ul li {
+  margin-top: 15px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+}
+
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-menu ul li p {
+  max-width: 300px;
 }
 
 @media (max-width: 768px) and (min-width: 300px) {
@@ -313,6 +416,41 @@ button, .btn {
   .testimonial-item {
     margin-top: 30px;
     width: 100%;
+  }
+  .contact {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact-item {
+    width: 90%;
+    padding: 20px;
+  }
+  .contact-item h1 {
+    font-size: 30px;
+  }
+  .contact-item p {
+    font-size: 14px;
+    max-width: 90%;
+    margin: auto;
+  }
+  .contact-item .email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .contact-item .email input {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .contact-item .email button {
+    margin: auto;
+    width: 90%;
+    padding: 20px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
