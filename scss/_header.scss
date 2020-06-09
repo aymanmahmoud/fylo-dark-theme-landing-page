@@ -69,36 +69,34 @@
   }
 }
 
-.productive{
+.productive {
   margin-top: 60px;
   display: flex;
   flex-direction: row;
-  &-img{
+  &-img {
     width: 50%;
-    padding:60px;
- 
-    img{
+    padding: 60px;
+
+    img {
       width: 100%;
     }
-
   }
 
-  &-content{
-  
+  &-content {
     width: 50%;
-    padding-left:60px ;
-    padding-right:60px ;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 80px;
-    h1{
+    h1 {
       font-family: $font-title;
       font-size: 36px;
-      max-width: 400px;;
+      max-width: 400px;
     }
-    p{
+    p {
       font-family: $font-body;
     }
 
-    a{
+    a {
       font-family: $font-body;
       font-size: 16px;
       text-decoration: none;
@@ -106,7 +104,45 @@
       color: $cyan;
     }
   }
-  
+}
+
+.testimonial {
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-around;
+
+  &-item {
+    width: 30%;
+    position: relative;
+    background-color: $testiBlue;
+    padding: 25px;
+    padding-top: 40px;
+    .qout {
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      z-index: 1;
+    }
+    p {
+      font-family: $font-body;
+      margin-bottom: 20px;
+    }
+    &-profile {
+      img {
+        border-radius: 50%;
+        width: 50px;
+      }
+      div {
+        display: inline-block;
+        vertical-align: middle;
+        h4 ,h6{
+          font-family: $font-title;
+          margin: 5px;
+        }
+        
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) and (min-width: 300px) {
@@ -146,44 +182,42 @@
       font-size: 14px;
     }
   }
-  .features{
-      flex-direction: column;
-      &-item{
-          width: 100%;
-      }
+  .features {
+    flex-direction: column;
+    &-item {
+      width: 100%;
+    }
   }
 
-  .productive{
+  .productive {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    &-img{
+    &-img {
       width: 100%;
-      padding:60px;
-   
-      img{
+      padding: 60px;
+
+      img {
         width: 100%;
       }
-  
     }
-  
-    &-content{
-    
+
+    &-content {
       width: 100%;
-      padding-left:30px ;
-      padding-right:30px ;
+      padding-left: 20px;
+      padding-right: 20px;
       padding-top: 10px;
-    
-      h1{
+
+      h1 {
         font-family: $font-title;
         font-size: 30px;
-        max-width: 400px;;
+        max-width: 400px;
       }
-      p{
+      p {
         font-family: $font-body;
       }
-  
-      a{
+
+      a {
         font-family: $font-body;
         font-size: 16px;
         text-decoration: none;
@@ -191,8 +225,18 @@
         color: $cyan;
       }
     }
-    
   }
 
+  .testimonial {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    &-item {
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
 
 }
