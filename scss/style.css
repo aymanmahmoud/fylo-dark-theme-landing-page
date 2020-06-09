@@ -82,7 +82,7 @@ button, .btn {
 
 .intro-img {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   display: block;
   margin: auto;
 }
@@ -124,6 +124,51 @@ button, .btn {
   font-family: "Open Sans", sans-serif;
   max-width: 390px;
   margin: auto;
+}
+
+.productive {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.productive-img {
+  width: 50%;
+  padding: 60px;
+}
+
+.productive-img img {
+  width: 100%;
+}
+
+.productive-content {
+  width: 50%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 80px;
+}
+
+.productive-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  max-width: 400px;
+}
+
+.productive-content p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.productive-content a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #65e2d9;
+  color: #65e2d9;
 }
 
 @media (max-width: 768px) and (min-width: 375px) {
@@ -171,6 +216,44 @@ button, .btn {
   }
   .features-item {
     width: 100%;
+  }
+  .productive {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productive-img {
+    width: 100%;
+    padding: 60px;
+  }
+  .productive-img img {
+    width: 100%;
+  }
+  .productive-content {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+  .productive-content h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    max-width: 400px;
+  }
+  .productive-content p {
+    font-family: "Open Sans", sans-serif;
+  }
+  .productive-content a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #65e2d9;
+    color: #65e2d9;
   }
 }
 /*# sourceMappingURL=style.css.map */
